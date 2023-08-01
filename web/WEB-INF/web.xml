@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.servlet.registerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogOutServlet</servlet-name>
+        <servlet-class>com.servlet.LogOutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddExpenseServlet</servlet-name>
+        <servlet-class>com.servlet.AddExpenseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewExpenseServlet</servlet-name>
+        <servlet-class>com.servlet.ViewExpenseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteExpenseServlet</servlet-name>
+        <servlet-class>com.servlet.DeleteExpenseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditExpenseServlet</servlet-name>
+        <servlet-class>com.servlet.EditExpenseServlet</servlet-class>
+    </servlet>
+<!--        <servlet>
+        <servlet-name>AddCategoryServlet</servlet-name>
+        <servlet-class>com.servlet.AddCategoryServlet</servlet-class>
+    </servlet>
+        <servlet>
+        <servlet-name>DeleteCategoryServlet</servlet-name>
+        <servlet-class>com.servlet.DeleteCategoryServlet</servlet-class>
+    </servlet>-->
+
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/registerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogOutServlet</servlet-name>
+        <url-pattern>/LogOutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddExpenseServlet</servlet-name>
+        <url-pattern>/AddExpense</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewExpenseServlet</servlet-name>
+        <url-pattern>/ViewExpenseServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteExpenseServlet</servlet-name>
+        <url-pattern>/DeleteExpenseServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditExpenseServlet</servlet-name>
+        <url-pattern>/EditExpenseServlet</url-pattern>
+    </servlet-mapping>
+    <!--    <servlet-mapping>
+        <servlet-name>AddCategoryServlet</servlet-name>
+        <url-pattern>/AddCategoryServlet</url-pattern>
+    </servlet-mapping>-->
+    <!--    <servlet-mapping>
+        <servlet-name>DeleteCategoryServlet</servlet-name>
+        <url-pattern>/DeleteCategoryServlet</url-pattern>
+    </servlet-mapping>-->
+
+</web-app>
